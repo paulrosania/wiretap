@@ -1,0 +1,15 @@
+S: * OK IMAP server ready, go ahead
+C: A1 LOGIN user password
+S: A1 OK LOGIN completed
+C: A2 SELECT inbox
+S: * 2 EXISTS
+S: * 2 RECENT
+S: * OK [UNSEEN 2] Message 2 is first unseen
+S: * OK [UIDVALIDITY 1] UIDs valid
+S: * OK [UIDNEXT 0] Predicted next UID
+S: * FLAGS (\Answered \Flagged \Draft \Deleted \Seen)
+S: * OK [PERMANENTFLAGS (\Answered \Flagged \Draft \Deleted \Seen)] Permitted
+S: A2 OK [READ-WRITE] SELECT completed
+C: A3 LOGOUT
+S: * BYE IMAP server signing off
+S: A3 OK LOGOUT completed
